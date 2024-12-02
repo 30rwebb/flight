@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <!--External Css Links-->
+    <link rel="stylesheet" href="style.css">
+    <!--Google Fonts Links-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.google.com/selection/embed">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos"
+</head>
+<body>
+    
+    
+    <!--HEADER-->
+
+    <header data-aos="fade-down" data-aos-duration="300">
+        <div class="logo">Airline</div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Book</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" id="menuIcon">
+            
+        </div>
+    </header>
+
+    <!--Main Section-->
+
+<main class="main-container">
+    <section class="left-section" data-aos="fade-right" data-aos-duration="3000">
+        <div class="content">
+            <h1>Discover the World<br> with our flight.</h1>
+            <form id="BookingForm">
+                <div class="trip-type">
+                    <label>
+                        <input type="radio" name="tripType" value="return" required>Return
+                    </label>
+                    <label>
+                        <input type="radio" name="tripType" value="oneway" required>Oneway
+                    </label>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <select id="takeOff" required>
+                            <option value="" disabled selected>Take off</option>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="UK">UK</option>
+                            <option value="India">India</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Australia">Australia</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="China">China</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Cyprus">Cyprus</option>
+                            <option value="Denmark">Denmark</option>
+                        </select>
+                    </div>
+
+                    <div class="Icon">
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <select id="Arrival" required>
+                            <option value="" disabled selected>Arrival</option>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="UK">UK</option>
+                            <option value="India">India</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Australia">Australia</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="China">China</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Cyprus">Cyprus</option>
+                            <option value="Denmark">Denmark</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <input type="date" id="DepartureDate" name="" required>
+                    </div>
+
+                    <div class="icon">
+                        <i class="fa-solid fa-calender-days"></i>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="date" id="Return" name="date" required>
+                    </div>
+                </div>
+
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="slider">
+            <div class="slider-header">
+                <h2>Popular beach Destination</h2>
+                <div class="slider-buttons">
+                    <button id="prev" class="slider-btn">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+
+                    <button id="Next" class="slider-btn">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="slider-container">
+                <div class="slider-images">
+                    <div class="slide">
+                        <img src="Assets/Cyprus.png" alt="Cyprus">
+                        <div class="info">
+                            <p class="location">Cyprus</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="<div class="slide">
+
+                        <img src="Assets/cyprus.png" alt="cyprus">
+                        <div class="info">
+                            <p class="location">Cyprus</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+
+                    <div class="slide">
+                        <img src="Assets/Germany.png" alt="germany">
+                        <div class="info">
+                            <p class="location">Germany</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="Assets/India.png" alt="India">
+                        <div class="info">
+                            <p class="location">India</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="Assets/France.png" alt="France">
+                        <div class="info">
+                            <p class="location">France</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="Assets/Japan.png" alt="Japan">
+                        <div class="info">
+                            <p class="location">Japan</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="Assets/China.png" alt="China">
+                        <div class="info">
+                            <p class="location">China</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="Assets/Brazil.png" alt="Brazil">
+                        <div class="info">
+                            <p class="location">Brazil</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <img src="Assets/Australia.png" alt="Australia">
+                        <div class="info">
+                            <p class="location">Australia</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="slide">
+                        <img src="Assets/USA.png" alt="USA">
+                        <div class="info">
+                            <p class="location">USA</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="slide">
+                        <img src="Assets/Uk.png" alt="UK">
+                        <div class="info">
+                            <p class="location">UK</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="slide">
+                        <img src="Assets/Pakistan.png" alt="Pakistan">
+                        <div class="info">
+                            <p class="location">Pakistan</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="slide">
+                        <img src="Assets/Canada.png" alt="Canada">
+                        <div class="info">
+                            <p class="location">Canada</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="slide">
+                        <img src="Assets/Spain.png" alt="Spain">
+                        <div class="info">
+                            <p class="location">Spain</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="slide">
+                        <img src="Assets/Greece.png" alt="Greece">
+                        <div class="info">
+                            <p class="location">Greece</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="slide">
+                        <img src="Assets/Russia.png" alt="Russia">
+                        <div class="info">
+                            <p class="location">Russia</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="slide">
+                        <img src="Assets/Italy.png" alt="Italy">
+                        <div class="info">
+                            <p class="location">Italy</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="slide">
+                        <img src="Assets/Estonia.png" alt="Estonia">
+                        <div class="info">
+                            <p class="location">Estonia</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="slide">
+                        <img src="Assets/Denmark.png" alt="Denmark">
+                        <div class="info">
+                            <p class="location">Denmark</p>
+                            <p class="sub-location">El Nido</p>
+                            <div class="price">
+                                <span class="slide-icon"><i class="fa-solid fa-plane-departure"></i></span>
+                                <span>643€</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="right-section" data-aos="fade-up-left" data-aos-duration="3000">
+        <img src="Assets/plane.png">
+    </section>
+</main>
+
+
+
+    <!--JavaScript-->
+    <script type="text/javascript" src="script.js"></script>
+    <!-- AOS JS -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+        AOS.Init({
+            offset: 1
+        });
+     </script>
+
+</body>
+</html>

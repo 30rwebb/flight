@@ -1,0 +1,282 @@
+/*========Google Fonts========*/
+@import url(https://fonts.google.com/icons?selected=Material+Symbols+Outlined:menu:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%235f6368);
+
+/* General Styles*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(Assets/wow.png);
+    font-family: "Lato", sans-serif;
+    overflow: hidden;
+}
+
+/* Color Variables*/
+
+:root{
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --main-color: #1ca1a8;
+    --dark-color: #148b94;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --h1-font: "Quattrocento", serif;;
+}
+
+/* Header Styles */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Navbar Styles */
+
+.navbar{
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--black-color);
+    border-bottom: 2px solid transparent;
+    transition: all .8s ease;
+}
+
+.navbar a:hover{
+    border-bottom: 2px solid var(--main-color);
+}
+
+/* Menu Icon Styles */
+
+.menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Main Styles */
+3:13 retouch
+
+/* Left Section Styles */
+
+
+/* Content Section Styles */
+
+
+/* Slidr Styles */
+
+.slider{
+    margin-top: 40px;
+}
+
+.slider-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.slider-buttons{
+    display: flex;
+    gap: 5px;
+}
+
+.slider-header{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.slider-btn{
+    color: var(--dark-color);
+    border: none;
+    width: 25px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.slider-btn:hover{
+    color: var(--dark-color);
+}
+
+.slider-container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slider-images{
+    display: flex;
+    transition: transform 0.3s ease;
+    gap: 15px;
+}
+
+.slide{
+    position: relative;
+    width: 150px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0pc 04px 8px rgba( 0, 0, 0, 0.2);
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.info{
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    color: var(--black-color);
+    font-size: 14px;
+}
+
+.location{
+    font-weight: bold;
+}
+
+.sub-location{
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.price{
+    font-size: 14px;
+}
+
+.slide-icon{
+    margin-right: 4px;
+}
+
+#prev{
+    left: 0;
+}
+
+#next{
+    right: 0;
+}
+
+/* Right Section Styles */
+
+.right-section{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-section img{
+    transform: rotate(20deg);
+    width: 130%;
+    border-radius: 10px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px){
+    body{
+        background: url(Assets/wow.png) center center / cover no-repeat;
+        overflow-x: hidden;
+    }
+
+    header{
+        padding: 25px 5%;
+        background-color: var(--white-color);
+    }
+    .menu-icon{
+        display: block;
+        font-size: 35px;
+        cursor: pointer;
+        position: absolute;
+        right: 40px;
+        top: 30px;
+        color: var(--glass-bg);
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--glass-bg);
+        backdrop-filter: blur(20px);
+        position: fixed;
+        top: 90px;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        transition: right 0.5s ease;
+        z-index: 9999;
+    }
+
+    .navbar a{
+        font-size: 1.9rem;
+        margin: 15px 0;
+        color: var(--black-color);
+        text-align: center;
+    }
+
+    .navbar.active{
+        right: 0;
+    }
+
+    .logo{
+        font-size: 35px;
+    }
+
+    .main-container{
+        flex-direction: column;
+    }
+
+    .right-section, .left-section{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .right-section{
+        order: 1;
+        justify-content: center;
+    }
+
+    .right-section img{
+        content:url(Assets/panel1.png);
+        width: 100%;
+        transform: none;
+    }
+} 
